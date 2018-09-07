@@ -1,0 +1,43 @@
+{
+  "number_of_cards": 102,
+  "cards": [
+    {
+      "id": 1,
+      "name": "Mondo Wall",
+      "description": "Increases your wall by twelve.",
+      "cost": "13",
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_wall": "+12"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Friendly Terrain",
+      "description": "Increases your wall by one. Play an additional card.",
+      "cost": "1",
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_wall": "+1",
+        "play_again": "true"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mother Lode",
+      "description": "Increases your Quarry level by one. Increases your Quarry level by an additional one if your Quarry level was lower than your opponents when you played this card.",
+      "cost": "4",
+      "type": "red",
+      "effect": "conditional",
+      "action": {
+        "your_quarries": "+1"
+      },
+      "condition": "your_quarries lower enemy_quarries",
+      "additional action": {
+        "your_quarries": "+1"
+      }
+    }
+  ]
+}
