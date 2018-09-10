@@ -43,11 +43,11 @@ Arcomage game emulator for bots tournament
 {
     "deck" : "standard",
     "hand_size" : 6,
-    "session" : "number" (optional),
+    "session" : "number",
     "win_condition" : {
         "tower" : 50,
         "resources" : 150
-    }
+    },
     "player_turn" : "1|2",
     "player1_state" : {
         "quarries" : 2,
