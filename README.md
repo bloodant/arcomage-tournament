@@ -2,6 +2,7 @@
 Arcomage game emulator for bots tournament
 
 # Configuration format (JSON)
+```json
 {
     "deck" : "standard", <br />
     "send_game_session" : "false", <br />
@@ -24,6 +25,7 @@ Arcomage game emulator for bots tournament
     }<br />
 }<br />
 <br />
+```
 # Input format (JSON)<br />
 {<br />
     "number_of_games" : "1000",<br /> 
