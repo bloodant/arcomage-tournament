@@ -26,14 +26,14 @@ Arcomage game emulator for bots tournament
 <br />
 # Input format (JSON)<br />
 {<br />
-    <pre>"number_of_games" : "1000",<br /> 
+    "number_of_games" : "1000",<br /> 
     "bots" : [<br />
         {<br />
             "name" : "EasyBot",<br />
             "type" : "web|local",<br />
             "path" : "URI"<br />
         }<br />
-    ]</pre><br />
+    ]<br />
 }<br />
 <br />
 # Message format for bot (JSON)
