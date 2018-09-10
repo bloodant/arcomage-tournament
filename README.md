@@ -3,8 +3,8 @@ Arcomage game emulator for bots tournament
 
 # Configuration format (JSON)
 {
-    "deck" : "standard", 
-    "send_game_session" : "false",
+    "deck" : "standard", <br />
+    "send_game_session" : "false", <br />
     "hand_size" : 6,
     "first_turn" : "player1|player2|random",
     "turns_limit" : "number|unlimited",
@@ -24,7 +24,7 @@ Arcomage game emulator for bots tournament
     }
 }
 
-# Input format
+# Input format (JSON)
 {
     "number_of_games" : "1000", 
     "bots" : [
@@ -36,7 +36,7 @@ Arcomage game emulator for bots tournament
     ]
 }
 
-# Message format for bot
+# Message format for bot (JSON)
 {
     "deck" : "standard",
     "hand_size" : 6,
