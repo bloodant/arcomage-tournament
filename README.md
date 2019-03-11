@@ -43,7 +43,7 @@ Arcomage game emulator for bots tournament
 {
     "deck" : "standard",
     "hand_size" : 6,
-    "session" : "number",
+    "session" : "number" [optional],
     "win_condition" : {
         "tower" : 50,
         "resources" : 150
@@ -72,12 +72,15 @@ Arcomage game emulator for bots tournament
     "hand" : [
         {
             "id": 1,
-            "name": "Mondo Wall"
+            "name": "Mondo Wall",
+            "name_rus": "Бастион"
         }, 
         {
             "id": 2,
-            "name": "Friendly Terrain"
-        }
+            "name": "Friendly Terrain",
+            "name_rus": "Благодатная почва"
+        },
+        ...
     ]
 }
 ```

@@ -1,0 +1,107 @@
+{
+  "number_of_cards": 102,
+  "cards": [
+    {
+      "id": 1,
+      "name": "Mondo Wall",
+      "name_rus": "Бастион",
+      "description": "Increases your wall by twelve.",
+      "cost": [
+        13,
+        0,
+        0
+      ],
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_wall": "+12"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Friendly Terrain",
+      "name_rus": "Благодатная почва",
+      "description": "Increases your wall by one. Play an additional card.",
+      "cost": [
+        1,
+        0,
+        0
+      ],
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_wall": "+1",
+        "play_again": "true"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mother Lode",
+      "name_rus": "Большая жила",
+      "description": "Increases your Quarry level by one. Increases your Quarry level by an additional one if your Quarry level was lower than your opponents when you played this card.",
+      "cost": [
+        4,
+        0,
+        0
+      ],
+      "type": "red",
+      "effect": "conditional",
+      "action": {
+        "your_quarries": "+1"
+      },
+      "condition": "your_quarries lower enemy_quarries",
+      "additional action": {
+        "your_quarries": "+1"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sturdy Wall",
+      "name_rus": "Большая стена",
+      "description": "Increases your wall by four.",
+      "cost": [
+        3,
+        0,
+        0
+      ],
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_wall": "+4"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Brick Shortage",
+      "name_rus": "Бракованная руда",
+      "description": "Each player loses eight bricks.",
+      "cost": [
+        0,
+        0,
+        0
+      ],
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_bricks": "-8",
+        "enemy_bricks": "-8"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Reinforced Wall",
+      "name_rus": "Великая стена",
+      "description": "Increases your wall by eight.",
+      "cost": [
+        8,
+        0,
+        0
+      ],
+      "type": "red",
+      "effect": "standard",
+      "action": {
+        "your_wall": "+8"
+      }
+    }
+  ]
+}
