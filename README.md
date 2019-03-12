@@ -6,7 +6,7 @@ Arcomage game emulator for bots tournament
 {
     "deck" : "standard", 
     "send_game_session" : "false", 
-    "hand_size" : 6,
+    "hand_size" : [6, 6],
     "first_turn" : "player1|player2|random",
     "turns_limit" : "number|unlimited",
     "win_condition" : {
@@ -28,11 +28,16 @@ Arcomage game emulator for bots tournament
 # Input format (JSON)
 ```json
 {
-    "number_of_games" : "1000", 
+    "number_of_games" : "100", 
     "bots" : [
         {
             "name" : "EasyBot",
-            "type" : "web|local",
+            "type" : "web|local|module",
+            "path" : "URI"
+        },
+        {
+            "name" : "RandomBot",
+            "type" : "web|local|module",
             "path" : "URI"
         }
     ]
